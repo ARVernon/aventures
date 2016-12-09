@@ -4,21 +4,107 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact A-Ventures</title>
+  <link href="css/bootstrap-flex.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <form>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" required>
-    <label for="company-name">Company Name</label>
-    <input type="text" name="company-name" id="company-name">
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" required>
-    <label for="fax">Fax Number</label>
-    <input type="tel" id="fax">
-    <label for="email">Email Address</label>
-    <input type="email" id="email">
-    <label for="website">Company Website</label>
-    <input type="url" id="website">
-  </form>
+  <div class="container">
+    <header class="main-header" role="banner">
+      <nav class="navbar navbar-light bg-faded" role="navigation">
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+          aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+          <a class="navbar-brand" href="index.html">A-Ventures, Inc.</a>
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Products</a>
+              <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                <a class="dropdown-item" href="#">Profiles</a>
+                <a class="dropdown-item" href="#">Hinges</a>
+                <a class="dropdown-item" href="#">Magnets</a>
+                <a class="dropdown-item" href="#">Louver Control</a>
+                <a class="dropdown-item" href="#">Pins &amp; Screws</a>
+                <a class="dropdown-item" href="#">Miscellaneous</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline float-lg-right">
+            <input class="form-control" type="text" placeholder="Search">
+            <button class="btn btn-secondary" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div id="address" class="col-xs-12 col-sm-4">
+        <article>
+          <p class="lead">Please fill out the form below to contact A-Ventures.</p>
+        </article>
+        <address>
+          Mailing address:<br> A-Ventures, Inc.<br> PO BOX 36578<br> Rock Hill, SC 29732-0509<br>
+          <br> Warehouse location:<br> 4000 Metzger RD<br> Fort Pierce, FL 34947-5848<br>
+          <br> Phone: <a href="tel:1-800-798-2291"> (800) 798-2291</a><br> Fax: (888) 399-0158<br> Email: <a href="mailto:sales@a-ventures.net">sales@a-ventures.net</a><br>
+        </address>
+      </div>
+      <div id="map-container" class="col-xs-12 col-sm-8">
+        <figure>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.4394220558024!2d-80.36755568478996!3d27.455575982896896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88def17e0702064f%3A0xa661afbd5b310b37!2s4000+Metzger+Rd%2C+Fort+Pierce%2C+FL+34947!5e0!3m2!1sen!2sus!4v1481320818336"
+            width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </figure>
+      </div>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-group row">
+          <label for="name" class="col-xs-2 col-form-label">Name</label>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" id="name" placeholder="First and last name" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="company-name" class="col-xs-2 col-form-label">Company Name</label>
+          <div class="col-xs-4">
+            <input type="text" class="form-control" id="company-name" placeholder="Company name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-xs-2 col-form-label">Phone Number</label>
+          <div class="col-xs-3">
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+        </div>
+        <label for="fax">Fax Number</label>
+        <input type="tel" id="fax">
+        <label for="email">Email Address</label>
+        <input type="email" id="email">
+        <label for="website">Company Website</label>
+        <input type="url" id="website">
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="container text-xs-center">
+        <span class="text-muted">&copy; 2017 A-Ventures, Inc. &#149; <a href="tel:1-800-798-2291"> (800) 798-2291</a> &#149; <a href="tel:1-772-448-4177"> (772) 448-4177</a> &#149; <a href="mailto:sales@a-ventures.net"> sales@a-ventures.net</a></span>
+      </div>
+    </footer>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
+      crossorigin="anonymous"></script>
+  </div>
 </body>
+
+</html>

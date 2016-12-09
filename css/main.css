@@ -1,5 +1,23 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+h4 {
+  text-transform: uppercase;
+}
+
+body {
+  background: url(../images/stucco.png) top left repeat;
+}
+
+.btn {
+  color: white;
+  background-color: navy;
+}
+
+.btn:hover {
+  background-color: blue;
+}
+
+.jumbotron {
+  margin-top: 2rem;
+}
 
 h4 {
   text-transform: uppercase;
@@ -21,27 +39,3 @@ body {
 .jumbotron {
   margin-top: 2rem;
 }
-=======
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-h4 {
-  text-transform: uppercase;
-}
-
-body {
-  background: url(../images/stucco.png) top left repeat;
-}
-
-.btn {
-  color: white;
-  background-color: navy;
-}
-
-.btn:hover {
-  background-color: blue;
-}
-
-.jumbotron {
-  margin-top: 2rem;
-}
->>>>>>> cd4345438befb9dd8762e5a721e5882cd0c85361

@@ -6,7 +6,7 @@ body {
   background: url(../images/stucco.png) top left repeat;
 }
 
-.btn {
+/* .btn {
   color: white;
   background-color: navy;
 }
@@ -14,27 +14,7 @@ body {
 .btn:hover {
   background-color: blue;
 }
-
-.jumbotron {
-  margin-top: 2rem;
-}
-
-h4 {
-  text-transform: uppercase;
-}
-
-body {
-  background: url(../images/stucco.png) top left repeat;
-}
-
-.btn {
-  color: white;
-  background-color: navy;
-}
-
-.btn:hover {
-  background-color: blue;
-}
+*/
 
 .jumbotron {
   margin-top: 2rem;
